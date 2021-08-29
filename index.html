@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Байкальский отдых</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
 <header class="header">
@@ -36,21 +39,47 @@
     <a href="#"></a>
 </section>
 <section class="categories">
-    <h2>Категории туров</h2>
-    <ul>
-        <li><a href="#"><img src="./images/category/1.jpg" width="256" height="152" alt="фото категории"><h3>Турбазы на Байкале</h3></a></li>
-        <li><a href="#"><img src="./images/category/2.jpg" width="256" height="152" alt="фото категории"><h3>Экскурсии и туры</h3></a></li>
-        <li><a href="#"><img src="./images/category/3.jpg" width="256" height="152" alt="фото категории"><h3>Охота и рыбалка</h3></a></li>
-        <li><a href="#"><img src="./images/category/4.jpg" width="256" height="152" alt="фото категории"><h3>Экстрим туры</h3></a></li>
-        <li><a href="#"><img src="./images/category/5.jpg" width="256" height="152" alt="фото категории"><h3>Теплоходы, яхты</h3></a></li>
-        <li><a href="#"><img src="./images/category/6.jpg" width="256" height="152" alt="фото категории"><h3>Красоты Байкала</h3></a></li>
-        <li><a href="#"><img src="./images/category/7.jpg" width="256" height="152" alt="фото категории"><h3>Гостиницы в Улан-Удэ</h3></a></li>
-        <li><a href="#"><img src="./images/category/8.jpg" width="256" height="152" alt="фото категории"><h3>Транспорт</h3></a></li>
-        <li><a href="#"><img src="./images/category/9.jpg" width="256" height="152" alt="фото категории"><h3>Деловой туризм</h3></a></li>
-        <li><a href="#"><img src="./images/category/10.jpg" width="256" height="152" alt="фото категории"><h3>Круизы по Байкалу</h3></a></li>
-        <li><a href="#"><img src="./images/category/11.jpg" width="256" height="152" alt="фото категории"><h3>Зимние туры</h3></a></li>
-        <li><a href="#"><img src="./images/category/12.jpg" width="256" height="152" alt="фото категории"><h3>Карта Байкала</h3></a></li>
-    </ul>
+    <div class="container">
+        <h2 class="categories-title visually-hidden">Категории туров</h2>
+        <ul class="categories-card-set">
+            <li class="categories-item"><a href="#"><img src="./images/category/1.jpg" width="256" height="152" alt="фото категории">
+                    <div class="categories-subtitle"><h3>Турбазы на Байкале</h3></div>
+                </a></li>
+            <li class="categories-item"><a href="#"><img src="./images/category/2.jpg" width="256" height="152" alt="фото категории">
+                    <div class="categories-subtitle"><h3>Экскурсии и туры</h3></div>
+                </a></li>
+            <li class="categories-item"><a href="#"><img src="./images/category/3.jpg" width="256" height="152" alt="фото категории">
+                    <div class="categories-subtitle"><h3>Охота и рыбалка</h3></div>
+                </a></li>
+            <li class="categories-item"><a href="#"><img src="./images/category/4.jpg" width="256" height="152" alt="фото категории">
+                    <div class="categories-subtitle"><h3>Экстрим туры</h3></div>
+                </a></li>
+            <li class="categories-item"><a href="#"><img src="./images/category/5.jpg" width="256" height="152" alt="фото категории">
+                    <div class="categories-subtitle"><h3>Теплоходы, яхты</h3></div>
+                </a></li>
+            <li class="categories-item"><a href="#"><img src="./images/category/6.jpg" width="256" height="152" alt="фото категории">
+                    <div class="categories-subtitle"><h3>Красоты Байкала</h3></div>
+                </a></li>
+            <li class="categories-item"><a href="#"><img src="./images/category/7.jpg" width="256" height="152" alt="фото категории">
+                    <div class="categories-subtitle"><h3>Гостиницы в Улан-Удэ</h3></div>
+                </a></li>
+            <li class="categories-item"><a href="#"><img src="./images/category/8.jpg" width="256" height="152" alt="фото категории">
+                    <div class="categories-subtitle"><h3>Транспорт</h3></div>
+                </a></li>
+            <li class="categories-item"><a href="#"><img src="./images/category/9.jpg" width="256" height="152" alt="фото категории">
+                    <div class="categories-subtitle"><h3>Деловой туризм</h3></div>
+                </a></li>
+            <li class="categories-item"><a href="#"><img src="./images/category/10.jpg" width="256" height="152" alt="фото категории">
+                    <div class="categories-subtitle"><h3>Круизы по Байкалу</h3></div>
+                </a></li>
+            <li class="categories-item"><a href="#"><img src="./images/category/11.jpg" width="256" height="152" alt="фото категории">
+                    <div class="categories-subtitle"><h3>Зимние туры</h3></div>
+                </a></li>
+            <li class="categories-item"><a href="#"><img src="./images/category/12.jpg" width="256" height="152" alt="фото категории">
+                    <div class="categories-subtitle"><h3>Карта Байкала</h3></div>
+                </a></li>
+        </ul>
+    </div>
 </section>
 <section class="directions">
     <h2>Основные направления деятельности</h2>
@@ -223,7 +252,72 @@
 </main>
 
 <footer class="footer">
-
+<div class="container">
+    <div class="footer-top">
+        <div class="footer-block">
+            <h3 class="footer-list">Бронирование</h3>
+            <ul>
+                <li class="footer-item"><a href="#">Отели и базы отдыха</a></li>
+                <li class="footer-item"><a href="#">Теплоходы и катера</a></li>
+                <li class="footer-item"><a href="#">Транспортные услуги</a></li>
+            </ul>
+        </div>
+    
+        <div class="footer-block">
+            <h3 class="footer-list">Экскурсии</h3>
+            <ul>
+                <li class="footer-item"><a href="#">Экскурсии и туры</a></li>
+                <li class="footer-item"><a href="#">Экстрим туры</a></li>
+            </ul>
+        </div>
+    
+        <div class="footer-block">
+            <h3 class="footer-list">Туры на Байкал</h3>
+            <ul>
+                <li class="footer-item"><a href="#">Туры Зима-Весна</a></li>
+                <li class="footer-item"><a href="#">Туры Лето-Осень</a></li>
+                <li class="footer-item"><a href="#">Туры охоты и рыбалки</a></li>
+            </ul>
+        </div>
+    
+        <div class="footer-block">
+            <h3 class="footer-list">О Байкале</h3>
+            <ul>
+                <li class="footer-item"><a href="#">Карта Байкала</a></li>
+                <li class="footer-item"><a href="#">Достопримечательности</a></li>
+                <li class="footer-item"><a href="#">Полезная информация</a></li>
+            </ul>
+        </div>
+    
+        <div class="footer-block">
+            <h3 class="footer-list">О нас</h3>
+            <ul>
+                <li class="footer-item"><a href="#">Контакты</a></li>
+                <li class="footer-item"><a href="#">Агентствам</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div>
+            <p>Турагентство «Байкальский отдых»</p>
+            <small>&copy; 2021. Все права защищены</small>
+        </div>
+        <address>
+            <p>Заказ туров и бронирование:</p>
+            <ul>
+                <li><a href="tel:+79243541540">тел. 8-924-3-541-540</a></li>
+                <li><a href="mailto:baikalholiday@mail.ru">e-mail: baikalholiday@mail.ru</a></li>
+            </ul>
+            <p>Адрес:</p>
+            <p>г. Улан-Удэ, ул.Гражданская, 20,
+                отель «Рестон», 1 этаж</p>
+        </address>
+        <div>
+            <a href="#">Политика конфиденциальности</a>
+            <a href="#">Дизайн<img src="./images/vector.svg" alt="логотип"></a>
+        </div>
+    </div>
+</div>
 </footer>
 </body>
 </html>
