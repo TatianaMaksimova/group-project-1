@@ -91,15 +91,17 @@ img {
 }
 
 .footer-top {
-  /* padding-bottom: 32px; */
   display: flex;
   padding: 39px 0px 22px;
   border-bottom: 1px solid #ffffff;
+  /* opacity: 0.2; */
   width: 1120px;
 }
 
+/* opacity: 0.8;
+  color: var(--secondary-text-color); */
+
 .footer-block {
-  justify-content: space-between;
   margin-right: 76px;
 }
 
@@ -114,19 +116,13 @@ img {
 
 .footer-item > a {
   display: inline-block;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 
   font-weight: 400;
   font-size: 16px;
   line-height: 1.3;
   color: var(--secondary-text-color);
   opacity: 0.8;
-}
-
-.footer-bottom {
-  display: flex;
-  padding-top: 32px;
-  padding-bottom: 49px;
 }
 
 .one {
@@ -147,4 +143,67 @@ img {
 
 .five {
   width: 96px;
+}
+
+/* Футер нижняя часть */
+.footer-bottom {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 45px;
+  /* pb 49px от вектора */
+}
+
+.address {
+  display: flex;
+  justify-content: space-between;
+}
+
+.address-item {
+  margin-right: 62px;
+}
+
+.tour {
+  margin-right: 64px;
+}
+
+.tour-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+.under {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.3;
+  opacity: 0.8;
+}
+.contact-item > a {
+  color: var(--secondary-text-color);
+}
+
+.vector {
+  margin-left: auto;
+}
+
+.vector {
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.vector-title {
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  text-decoration-line: underline;
+  color: var(--secondary-text-color);
+}
+
+.design {
+  font-style: normal;
+  font-size: 12px;
+  opacity: 0.5;
+  color: var(--secondary-text-color);
 }
