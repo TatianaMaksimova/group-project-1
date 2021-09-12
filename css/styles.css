@@ -1,6 +1,7 @@
 :root {
   --primary-text-color: #333333;
   --secondary-text-color: #ffffff;
+  --text-color: #000000;
 }
 
 body {
@@ -50,6 +51,89 @@ img {
   overflow: hidden;
 }
 
+/* Шапка-header */
+.header {
+  position: absolute;
+  width: 100%;
+}
+
+.header-logo {
+  /* display: flex; */
+
+  font-family: PT Serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.3;
+  color: var(--secondary-text-color);
+}
+
+.header-accent {
+  /* display: block; */
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  color: var(--secondary-text-color);
+}
+
+/* Путешествия по Байкалу */
+.hero {
+  background-image: url(../images/overlay-hero.jpg);
+  padding-top: 226px;
+  padding-bottom: 33px;
+  max-width: 1920px;
+  margin: auto;
+  padding: auto;
+}
+
+.hero-title {
+  margin-bottom: 8px;
+
+  max-width: 724px;
+  font-family: PT Serif;
+  font-weight: bold;
+  font-size: 90px;
+  line-height: 1.2;
+  color: var(--secondary-text-color);
+}
+
+.hero-text {
+  margin-bottom: 94px;
+  max-width: 450px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  color: var(--secondary-text-color);
+}
+
+.hero-link {
+  display: inline-block;
+  padding: 20px 53px;
+  margin-bottom: 184px;
+  border: 1px solid var(--secondary-text-color);
+  border-radius: 30px;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+}
+
+.hero-arrow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+
+  border: 1px solid var(--secondary-text-color);
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
 /* Категории туров */
 .categories {
   padding-top: 48px;
@@ -72,16 +156,15 @@ img {
   overflow: hidden;
 }
 
-.caregories-subtitle {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.2;
-
+.categories-subtitle {
   padding-top: 13px;
   padding-bottom: 16px;
   padding-left: 19px;
-  padding-right: 19px;
-  color: #000000;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--text-color);
 }
 
 /* Футер */
@@ -92,9 +175,8 @@ img {
 
 .footer-top {
   display: flex;
-  padding: 39px 0px 22px;
+  padding: 39px 0px 32px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  width: 1120px;
 }
 
 .footer-block {
@@ -116,14 +198,16 @@ img {
 
 .footer-item {
   font-weight: 400;
-  font-style: normal;
   font-size: 16px;
   line-height: 1.3;
 }
 
+.footer-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
 .footer-item > a {
   display: inline-block;
-  margin-bottom: 10px;
 
   color: rgba(255, 255, 255, 0.8);
 }
@@ -131,14 +215,12 @@ img {
 /* Футер нижняя часть */
 .footer-bottom {
   display: flex;
-  justify-content: space-between;
   padding-top: 32px;
   padding-bottom: 45px;
 }
 
 .address {
   display: flex;
-  margin-right: 126px;
 }
 
 .address-item:not(:last-child) {
@@ -159,6 +241,7 @@ img {
 }
 
 .under {
+  max-width: 219px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -167,7 +250,7 @@ img {
 }
 
 .contact-list.under,
-.tour-title .under {
+.address-item .under {
   line-height: 1.5;
 }
 
@@ -176,9 +259,10 @@ img {
 }
 
 .vector {
+  margin-left: auto;
+
   font-weight: 400;
   line-height: 1.3;
-  font-style: normal;
 }
 
 .vector-link {
@@ -199,7 +283,6 @@ img {
   display: inline-block;
   margin-bottom: 20px;
 
-  font-style: normal;
   font-size: 14px;
   color: var(--secondary-text-color);
   text-decoration-line: underline;
