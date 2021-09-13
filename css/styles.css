@@ -57,22 +57,105 @@ img {
   width: 100%;
 }
 
+.header::after {
+  content: '';
+  position: absolute;
+  top: 81px;
+  left: 0;
+
+  display: block;
+  height: 1px;
+  width: 100%;
+  background: #c4c4c4;
+  border: 1px solid #d9d9de;
+  opacity: 0.3;
+}
+
+.header-blok {
+  display: flex;
+  align-items: center;
+
+  padding-top: 14px;
+  padding-bottom: 14px;
+  margin-bottom: 20px;
+}
+
 .header-logo {
-  /* display: flex; */
+  display: flex;
 
   font-family: PT Serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.3;
   color: var(--secondary-text-color);
 }
 
+.header-description {
+  margin-left: 20px;
+}
+
 .header-accent {
-  /* display: block; */
+  display: block;
 
   font-weight: 400;
   font-size: 18px;
+  line-height: 1.2;
+  color: var(--secondary-text-color);
+}
+
+.header-list {
+  display: flex;
+  margin-left: 179px;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 33px;
+}
+
+.header-contacts {
+  display: flex;
+  align-items: center;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.3;
+  color: var(--secondary-text-color);
+}
+
+.header-icon {
+  margin-right: 13px;
+}
+
+.header-button {
+  margin-left: auto;
+  padding: 12px 26px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 22px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  background-color: transparent;
+  color: var(--secondary-text-color);
+}
+
+.header-navigation {
+  display: flex;
+}
+
+.navigation-item {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-item:not(:last-child) {
+  margin-right: 32px;
+}
+
+.header-link {
+  font-weight: 400;
+  font-size: 16px;
   line-height: 1.2;
   color: var(--secondary-text-color);
 }
@@ -137,7 +220,7 @@ img {
 
 /* Категории туров */
 .categories {
-  padding-top: 48px;
+  padding-top: 64px;
   padding-bottom: 64px;
 }
 
