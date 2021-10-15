@@ -53,7 +53,7 @@ img {
   overflow: hidden;
 }
 
-/* ---------------------------------Шапка-header */
+/* --------------------Шапка-header----------------------- */
 .header {
   position: absolute;
   width: 100%;
@@ -162,7 +162,7 @@ img {
   color: var(--secondary-text-color);
 }
 
-/* --------------------Герой. Путешествия по Байкалу */
+/* ------------Герой. Путешествия по Байкалу---------------- */
 .hero {
   background-image: url(../images/overlay-hero.jpg);
   padding-top: 226px;
@@ -220,7 +220,7 @@ img {
   margin: 0 auto;
 }
 
-/* ---------------------------Категории туров */
+/* --------------Категории туров------------------- */
 .categories {
   padding-top: 64px;
   padding-bottom: 64px;
@@ -249,7 +249,7 @@ img {
   color: var(--text-color);
 }
 
-/* ----------------Основные направления деятельности */
+/* ----------Основные направления деятельности-------------- */
 .directions {
   padding-top: 44px;
   padding-bottom: 80px;
@@ -284,7 +284,7 @@ img {
   margin-top: 16px;
 }
 
-/* -----------------------------Популяные предложения */
+/* ---------------Популярные предложения----------------- */
 .suggestions {
   padding-top: 76px;
   padding-bottom: 80px;
@@ -294,7 +294,7 @@ img {
   position: relative;
 }
 
-.suggestions-title {
+.suggestions__title {
   margin-bottom: 40px;
 
   font-family: PT Serif;
@@ -382,7 +382,15 @@ img {
   color: var(--secondary-text-color);
 }
 
-/* -------------------------Фотогалерея */
+/* font-family: PT Serif;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 1.3;
+text-align: center;
+color: #000000; */
+
+/* -------------------------Фотогалерея------------------- */
 
 .gallery {
   padding-top: 44px;
@@ -445,15 +453,13 @@ img {
   background-color: transparent;
 }
 
-/* ----------Байкальский отдых с нами - это легко! */
+/* ----------Байкальский отдых с нами - это легко!---------- */
 .invitation {
   padding-top: 80px;
   padding-bottom: 54px;
 }
 
 .invitation__title {
-  margin-bottom: 45px;
-
   font-family: PT Serif;
   font-weight: 700;
   font-size: 44px;
@@ -462,21 +468,36 @@ img {
   text-transform: uppercase;
   color: var(--text-color);
 }
-.invitation__blok {
+.invitation__images-blok {
   display: flex;
-}
+  justify-content: space-between;
+  margin-top: 45px;
 
-.invitation__images {
   position: relative;
-  width: 352px;
-  height: 478px;
 }
 
-.invitation__text {
-  margin-left: 32px;
+.invitation__image:last-child {
+  position: absolute;
+  top: 160px;
+  left: 96px;
 }
 
-/* ---------------------------------------------Футер */
+.invitation__text-container {
+  width: 736px;
+}
+
+.invitation_text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  color: var(--primary-text-color);
+}
+
+.invitation_text:nth-child(-n + 5) {
+  margin-bottom: 10px;
+}
+
+/* -----------------------Футер------------------------- */
 .footer {
   color: var(--secondary-text-color);
   background-color: #202020;
@@ -521,7 +542,7 @@ img {
   color: rgba(255, 255, 255, 0.8);
 }
 
-/* ----------------------------Футер - bottom */
+/* --------------------Футер - bottom--------------------*/
 .footer-bottom {
   display: flex;
   padding-top: 32px;
