@@ -517,20 +517,49 @@
       <!-- Преимущества -->
       <section class="features">
         <div class="container">
-          <h2>Преимущества</h2>
-          <ul>
-            <li><p>7 лет успешной работы</p></li>
-            <li><p>250+ отелей на Байкале</p></li>
-            <li><p>100+ различных туров</p></li>
-            <li><p>32 000 кв. км – площадь на которой мы организовываем путешествия</p></li>
-            <li><p>50 000 довольных туристов от 3 до 85 лет</p></li>
+          <h2 class="visually-hidden">Преимущества</h2>
+          <ul class="features__list">
+            <li class="features__item">
+              <p><span>7</span> лет успешной работы</p>
+            </li>
+            <li class="features__item">
+              <p><span>250+</span> отелей на Байкале</p>
+            </li>
+            <li class="features__item">
+              <p><span>100+</span> различных туров</p>
+            </li>
+            <li class="features__item">
+              <p><span>32 000</span> кв. км – площадь на которой мы организовываем путешествия</p>
+            </li>
+            <li class="features__item">
+              <p><span>50 000</span> довольных туристов от 3 до 85 лет</p>
+            </li>
           </ul>
         </div>
       </section>
       <!-- Забронируйте отдых на Байкале -->
-      <section class="form">
+      <section class="reservation">
         <div class="container">
-          <h2>Забронируйте отдых на Байкале</h2>
+          <h2 class="reservation__title">Забронируйте отдых на Байкале</h2>
+          <form class="reservation__form">
+            <label><input type="text" placeholder="Ваше имя" /></label>
+            <label><input type="text" placeholder="Телефон" /></label>
+            <label><input type="text" placeholder="E-mail" /></label>
+            <label><input type="text" placeholder="Местность Байкала" /></label>
+            <label><input type="text" placeholder="Количество взрослых" /></label>
+            <label><input type="text" placeholder="Количество детей, их возраст" /></label>
+            <label><input type="text" placeholder="Дата заезда" /></label>
+            <label>
+              <textarea name="" id="" cols="30" rows="10" placeholder="Комментарий"></textarea>
+            </label>
+            <label for=""><input type="text" placeholder="Дата отъезда" /></label>
+            <button type="button">Отправить заявку</button>
+            <label for=""
+              ><input type="checkbox" /><a href="#"
+                >Согласие на обработку персональных данных</a
+              ></label
+            >
+          </form>
         </div>
       </section>
     </main>
